@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us | TechCare</title>
+<meta name="description" content="TechCare: Computer Repair and Services. Affordable computer repair, laptop troubleshooting, software installation and virus removal in Cebu.">
+<meta name="keywords" content="affordable computer repair Cebu, laptop troubleshooting, software installation, virus removal, computer services Cebu">
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css" />
+<script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+<header>
+  <div class="container topbar">
+    <a href="index.html" class="logo"><img src="logo.jpg" alt="TechCare logo"><span><b>TechCare</b><br><small>Computer Repair and Services</small></span></a>
+    <button id="burger" class="burger" aria-label="Open menu">☰</button>
+    <nav id="menu"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="pricing.html">Pricing</a><a href="why-choose-us.html">Why Choose Us</a><a href="contact.html">Contact Us</a><a href="contact.html" class="btn book">Book a Repair</a></nav>
+  </div>
+</header>
+<main>
+<div class="banner"><div class="container"><h1>Contact Us</h1><p>Send us a service request.</p></div></div>
+<section class="container two">
+ <form id="form" novalidate>
+  <div class="field"><label>Full Name *</label><input id="name" type="text"><div class="err" data-for="name"></div></div>
+  <div class="field"><label>Email Address *</label><input id="email" type="email"><div class="err" data-for="email"></div></div>
+  <div class="field"><label>Contact Number *</label><input id="phone" type="tel"><div class="err" data-for="phone"></div></div>
+  <div class="field"><label>Customer Type *</label><select id="ctype"><option value="">-- Select --</option><option>Student</option><option>Teacher</option><option>Employee</option><option>Small Business Owner</option><option>Other</option></select><div class="err" data-for="ctype"></div></div>
+  <div class="field"><label>Computer Type *</label><select id="comp"><option value="">-- Select --</option><option>Desktop</option><option>Laptop</option></select><div class="err" data-for="comp"></div></div>
+  <div class="field"><label>Service Needed *</label><select id="service"><option value="">-- Select a service --</option><option data-price="250">Basic Troubleshooting</option><option data-price="500">Computer Repair</option><option data-price="300">Operating System Installation and Updating</option><option data-price="300">Driver Installation</option><option data-price="250">Virus Removal</option></select><div class="err" data-for="service"></div></div>
+  <div class="field"><label>Estimated Service Price</label><input id="est" type="text" readonly value="Select a service"></div>
+  <div class="field"><label>Description of the Computer Problem *</label><textarea id="desc" rows="5"></textarea><div class="err" data-for="desc"></div></div>
+  <div class="field"><label>Preferred Contact Method *</label><label class="inline"><input type="radio" name="contact_method" value="Email"> Email</label> <label class="inline"><input type="radio" name="contact_method" value="Phone"> Phone</label><div class="err" data-for="method"></div></div>
+  <div class="field"><label class="inline"><input type="checkbox" id="consent"> I agree to be contacted regarding my service request. *</label><div class="err" data-for="consent"></div></div>
+  <button type="submit" id="submit" class="btn">Submit Service Request</button>
+  <div id="status"></div>
+ </form>
+</section>
+</main>
+
+<footer>
+  <div class="container footgrid">
+    <div><img src="logo.jpg" alt="TechCare logo" class="flogo"><h3>TechCare: Computer Repair and Services</h3>
+    <p>TechCare provides affordable and reliable computer repair and technical support for students, teachers, employees, small business owners, and everyday computer users.</p></div>
+    <div><h3>Quick Links</h3><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="why-choose-us.html">Why Choose Us</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h3>Our Services</h3><ul><li><a href="contact.html">Basic Troubleshooting</a></li><li><a href="contact.html">Computer Repair</a></li><li><a href="contact.html">OS Installation and Updating</a></li><li><a href="contact.html">Driver Installation</a></li><li><a href="contact.html">Virus Removal</a></li></ul></div>
+  </div>
+  <p class="copy">© <span id="yr">2026</span> TechCare: Computer Repair and Services. All rights reserved.</p>
+</footer>
+<script type="py" src="main.py"></script>
+<script type="py" src="contact.py"></script>
+</body>
+</html>
