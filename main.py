@@ -4,7 +4,7 @@ from pyscript import document, window
 from pyodide.ffi import create_proxy
 
 get = document.getElementById
-proxies = []  
+proxies = []   
 
 
 def listen(element, event, function):
