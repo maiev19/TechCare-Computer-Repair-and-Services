@@ -95,5 +95,5 @@ footer a:hover { text-decoration: underline; }
   .hero h1 { font-size: 30px; }
 }
 
-.video-box { width: 100%; max-width: 800px; margin: 0 auto; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+.video-box { width: 100%; max-width: 560px; margin: 0 auto; background: #000; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
 .video-box video { display: block; width: 100%; height: auto; }
